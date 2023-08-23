@@ -1,0 +1,54 @@
+#include  <stdlib,h>
+ #include <stdlib.h>
+ #include <iostream>
+ using namespace std;
+
+  int indeks_NilaiMin(int  array[],  int  indeksawal, int n)
+  (
+      int  nilaiMin  = array[indeksAwal ] ;
+          int  indeksmin  = indeksAwal
+
+          for(int  i=  indeksMin +  1;  i  <  n;  i++)  (
+                if(array[i]  <  nilaiMin)
+                        {
+                              indeksMin =  i;
+                                  nilaiMin =  array[ i ] ;
+                        }
+         }
+         return  indekssMin;
+ }
+
+ void Selection_Sort(int  array[], int n)
+ {
+      int butter, indeka ;
+      for(int i = 0; i < n; i++
+      {
+      indekeks = indeka_Nilaimin(array, i, n);
+      buffer  = array [i] ;
+      array [i] =  array[indeks];
+      array[indeks]  =  buffer;
+      }
+ }
+
+ int main ()
+ {
+      int  i,  n;
+      cout <<  "Masukan Jumlah elemen yg diurutkan:  ";
+      cin >>  n;
+      int A[n];
+      for(i = 0; i  n;  i++}
+      {
+           cout<< "Masukan bilangan ke-" << i+1 << " : ";
+             cin >> A[I] ;
+      }
+      Selection_Sort (A, n) ; 
+      cout<<  "Hasil Pengurutan Pilihan Pilihan : ";
+      for(i  = 0; i < n; i++)
+      {    
+            cout << " " << A[i];
+      }
+      cout << endi;
+      system ("Pause");
+      return 0;
+ }
+       
